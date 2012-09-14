@@ -12,7 +12,13 @@
     ],
     "require": {
         "symfony/framework-bundle": "2.*",
-        "pagerfanta/pagerfanta": "dev-master"
+        "pagerfanta/pagerfanta": "dev-feat-max-results"
+    },
+    "repositories": {
+       "pagerfanta/pagerfanta": {
+            "type": "vcs",
+            "url": "git://github.com/cedriclombardot/Pagerfanta.git"
+        }  
     },
     "autoload": {
         "psr-0": { "WhiteOctober\\PagerfantaBundle": "" }
