@@ -87,10 +87,10 @@ class PagerfantaExtension extends \Twig_Extension
             if (!empty($page)) {
                 $pagePropertyPath->setValue($routeParams, $page);
             }
-
+            
             return $router->generate($routeName, $routeParams);
-        };
-
+         }; 
+ 
         return $this->container->get('white_october_pagerfanta.view_factory')->get($viewName)->render($pagerfanta, $routeGenerator, $options);
     }
 
